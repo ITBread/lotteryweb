@@ -1,0 +1,17 @@
+{% extends "shared/shared.html"%}
+
+{% block title %}用户首页{% endblock %}
+
+{% block content %}
+
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+
+          <!-- /.col -->
+
+        <!-- /.social-auth-links -->
+
+    </div>
+    <!-- /.login-box-body -->
+{% endblock %}
