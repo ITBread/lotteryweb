@@ -5,6 +5,57 @@
 {% block content %}
 
     <div class="content">
+        <div class="row">
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">Responsive Hover Table</h3>
+  
+                <div class="box-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                    <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+  
+                    <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body table-responsive no-padding">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                          <td width="60" rowspan="2">期号</td>
+                          <td width="110" rowspan="2">开奖日期</td>
+                          <td colspan="2" class="qbg">中奖号码</td>
+                          <td rowspan="2">总销售额（元）</td>
+                          <td colspan="2" class="qbg">一等奖</td>
+                          <td colspan="2" class="qbg">二等奖</td>
+                          <td colspan="2" class="qbg">三等奖</td>
+                          <td width="99" rowspan="2">奖池（元）</td>
+                          <td width="38" rowspan="2">详情</td>
+                        </tr>
+                        <tr>
+                          <td width="170">红球</td>
+                          <td width="38">蓝球</td>
+                          <td width="38">注数</td>
+                          <td width="78">中奖金额<br>（元）</td>
+                          <td width="38">注数</td>
+                          <td width="78">中奖金额<br>（元）</td>
+                          <td width="38">注数</td>
+                          <td width="78">中奖金额<br>（元）</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr data-week="2"><td>2019019</td><td>2019-02-19(二)</td><td><span class="rq1">03</span><span class="rq1">11</span><span class="rq1">17</span><span class="rq1">18</span><span class="rq1">24</span><span class="rq1">25</span></td><td><span class="bq1">06</span></td><td>326,400,930</td><td>24</td><td>5530875</td><td>268</td><td>59426</td><td>2643</td><td>3000</td><td>1285383840</td><td><a class="bgztXq" href="http://www.cwl.gov.cn//c/2019-02-19/449544.shtml"></a></td></tr>
+                          <tr data-week="7"><td>2019018</td><td>2019-02-17(日)</td><td><span class="rq1">04</span><span class="rq1">11</span><span class="rq1">18</span><span class="rq1">19</span><span class="rq1">26</span><span class="rq1">32</span></td><td><span class="bq1">04</span></td><td>349,743,310</td><td>8</td><td>7473244</td><td>364</td><td>67946</td><td>1391</td><td>3000</td><td>1370346090</td><td><a class="bgztXq" href="http://www.cwl.gov.cn//c/2019-02-17/449334.shtml"></a></td></tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+
+
+        </div>
 
           <div class="row">
               <div class="box">
@@ -65,7 +116,74 @@
               </div>
               <!-- /.box -->
             </div>
-
+            
+            <div class="row">
+                <div class="box">
+                  <div class="box-header">
+                    <h3 class="box-title">Responsive Hover Table</h3>
+      
+                    <div class="box-tools">
+                      <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+      
+                        <div class="input-group-btn">
+                          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>ID</th>
+                            <th>User</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Reason</th>
+                          </tr>                     
+                          
+                          <tr>
+                              <th>ID</th>
+                              <th>User</th>
+                              <th>Date</th>
+                              <th>Status</th>
+                              <th>Reason</th>
+                            </tr>
+                      <tr>
+                        <td>183</td>
+                        <td>John Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="label label-success">Approved</span></td>
+                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                      </tr>
+                      <tr>
+                        <td>219</td>
+                        <td>Alexander Pierce</td>
+                        <td>11-7-2014</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                      </tr>
+                      <tr>
+                        <td>657</td>
+                        <td>Bob Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="label label-primary">Approved</span></td>
+                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                      </tr>
+                      <tr>
+                        <td>175</td>
+                        <td>Mike Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="label label-danger">Denied</span></td>
+                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+              </div>
        
             <div class="row">
                 <div class="box-header">
