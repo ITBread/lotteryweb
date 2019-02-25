@@ -46,6 +46,20 @@ func main() {
 		ctx.View("index.html")
 	})
 
+	app.Get("/dlt", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		//ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件： ./views/hello.html
+		ctx.View("dlt.html")
+	})
+
+	app.Get("/ssq", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		//ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件： ./views/hello.html
+		ctx.View("ssq.html")
+	})
+
 	app.Get("/user/register", func(ctx iris.Context) {
 		// 绑定： {{.message}}　为　"Hello world!"
 		//ctx.ViewData("message", "Hello world!")

@@ -1,0 +1,129 @@
+{% extends "shared/baselayout.html"%}
+
+{% block title %}登陆首页{% endblock %}
+
+{% block content %}
+
+<div class="c-tab" style="display:block;" id="pttz">
+  <div class="c-select clearfix">
+    <div class="c-s-l">
+      <div class="c-tit">— <span class="orange3 f18">前区</span> —　至少选<em class="red">5</em>个</div>
+      <div class="c-num">
+        <ul class="ball-orange clearfix">
+          <li><b class="ball" data-num="01">01</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="02">02</b><em class="num-yl">5</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="03">03</b><em class="num-yl">2</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="04">04</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="05">05</b><em class="num-yl">3</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="06">06</b><em class="num-yl">19</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="07">07</b><em class="num-yl">3</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="08">08</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="09">09</b><em class="num-yl">8</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="10">10</b><em class="num-yl">5</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="11">11</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="12">12</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="13">13</b><em class="num-yl">4</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="14">14</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="15">15</b><em class="num-yl">7</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="16">16</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="17">17</b><em class="num-yl">7</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="18">18</b><em class="num-yl">2</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="19">19</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="20">20</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="21">21</b><em class="num-yl">15</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="22">22</b><em class="num-yl">3</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="23">23</b><em class="num-yl">19</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="24">24</b><em class="num-yl">10</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="25">25</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="26">26</b><em class="num-yl">2</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="27">27</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="28">28</b><em class="num-yl">4</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="29">29</b><em class="num-yl">13</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="30">30</b><em class="num-yl">5</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="31">31</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="32">32</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="33">33</b><em class="num-yl">26</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="34">34</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="35">35</b><em class="num-yl"><span style="color:red">27</span></em><em class="num-lr">0</em></li>
+        </ul>
+        <div class="c-jx">
+          <select autocomplete="off" name="sele" data-change="set(beforeRndSize, $value)">
+            <option value="5" selected="">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+          </select>
+          <span class="btn btn-white" data-click="random(before)">机选前区</span> <span class="c-slt-del" title="清除所选前区号码" data-click="clear(before)">清</span> </div>
+      </div>
+    </div>
+    <div class="c-s-r">
+      <div class="c-tit">— <span class="purple f18">后区</span> —　至少选<em class="red">2</em>个</div>
+      <div class="c-num">
+        <ul class="ball-purple clearfix">
+          <li><b class="ball" data-num="01">01</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="02">02</b><em class="num-yl">1</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="03">03</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="04">04</b><em class="num-yl">3</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="05">05</b><em class="num-yl"><span style="color:red">13</span></em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="06">06</b><em class="num-yl">2</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="07">07</b><em class="num-yl">8</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="08">08</b><em class="num-yl">7</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="09">09</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="10">10</b><em class="num-yl">8</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="11">11</b><em class="num-yl">6</em><em class="num-lr">0</em></li>
+          <li><b class="ball" data-num="12">12</b><em class="num-yl">0</em><em class="num-lr">0</em></li>
+        </ul>
+        <div class="c-jx">
+          <select autocomplete="off" name="sele" data-change="set(afterRndSize, $value)">
+            <option value="2" selected="">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span class="btn btn-white" data-click="random(after)">机选后区</span> <span class="c-slt-del" title="清除所选后区号码" data-click="clear(after)">清</span> </div>
+      </div>
+    </div>
+    <div class="c-s-filter">
+      <p class="filter-cur"> <span class="filter-yl">遗漏 <i class="ico"></i> </span> <span class="filter-yl-tips" style="display: none;">指此号码自上次开出至本期未出现的期数<i class="ico"></i></span> </p>
+      <p> <span class="filter-lr">冷热 <i class="ico"></i> </span> <span class="filter-lr-tips" style="display: none;">指此号码近100期出现次数<i class="ico"></i></span> </p>
+    </div>
+  </div>
+  <div class="num-info">
+    <p class="cl-gray2 f14 m-b5">您选择了 <em class="orange2">0</em> 个前区号码， <em class="purple">0</em> 个后区号码，共 <em class="red">0</em> 注，共 <em class="red">0.00</em> 元</p>
+  </div>
+</div>
+{% endblock %}
