@@ -21,10 +21,25 @@
 .kjh li.lQiu {
     background: url(/public/images/blue.png) ;
 }
-
- 
+.wqkj .bgzt .rq1 {
+    background: url(/public/images/qiuH.png) no-repeat;
+}
+.wqkj .bgzt .rq1, .wqkj .bgzt .bq1 {
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+    display: inline-block;
+    text-align: center;
+    font: 12px/25px "Microsoft YaHei", "微软雅黑", Arial;
+    color: #fff;
+    border-radius: 50%;
+}
  </style> 
 
+<div class="content">
+<div class="row">
+  <div class="box">
 <div class="kjggL">
   <div class="kjxx">
     <em>双色球 第<span class="qHao">2019021</span>期</em>
@@ -41,4 +56,66 @@
   </ul>
   
 </div>
+</div>
+</div>
+
+
+
+
+  
+  <div class="row">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">Responsive Hover Table</h3>
+
+        <div class="box-tools">
+          <div class="input-group input-group-sm" style="width: 150px;">
+            <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body table-responsive no-padding">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                  <td width="60" rowspan="2">期号</td>
+                  <td width="110" rowspan="2">开奖日期</td>
+                  <td colspan="2" class="qbg">中奖号码</td>
+                  <td rowspan="2">总销售额（元）</td>
+                  <td colspan="2" class="qbg">一等奖</td>
+                  <td colspan="2" class="qbg">二等奖</td>
+                  <td colspan="2" class="qbg">三等奖</td>
+                  <td width="99" rowspan="2">奖池（元）</td>
+                  <td width="38" rowspan="2">详情</td>
+                </tr>
+                <tr>
+                  <td width="170">红球</td>
+                  <td width="38">蓝球</td>
+                  <td width="38">注数</td>
+                  <td width="78">中奖金额<br>（元）</td>
+                  <td width="38">注数</td>
+                  <td width="78">中奖金额<br>（元）</td>
+                  <td width="38">注数</td>
+                  <td width="78">中奖金额<br>（元）</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr data-week="7"><td>2019021</td><td>2019-02-24(日)</td><td><span class="rq1">02</span><span class="rq1">05</span><span class="rq1">07</span><span class="rq1">08</span><span class="rq1">20</span><span class="rq1">27</span></td><td><span class="bq1">04</span></td><td>370,839,306</td><td>6</td><td>8810224</td><td>214</td><td>133535</td><td>1155</td><td>3000</td><td>1301850849</td><td><a class="bgztXq" href="http://www.cwl.gov.cn//c/2019-02-24/449667.shtml"></a></td></tr></tbody>
+        </table>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>                                       
+  <!-- /.box -->
+
+
+
+</div></div>
 {% endblock %}

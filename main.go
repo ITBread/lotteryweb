@@ -60,6 +60,13 @@ func main() {
 		ctx.View("ssq.html")
 	})
 
+	app.Get("/buy", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		//ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件： ./views/hello.html
+		ctx.View("buy.html")
+	})
+
 	app.Get("/user/register", func(ctx iris.Context) {
 		// 绑定： {{.message}}　为　"Hello world!"
 		//ctx.ViewData("message", "Hello world!")

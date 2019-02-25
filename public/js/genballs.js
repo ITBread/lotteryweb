@@ -1,0 +1,4 @@
+function genRedBalls(){
+  var redball ="";
+  
+}

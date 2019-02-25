@@ -1,0 +1,66 @@
+{% extends "shared/baselayout.html"%}
+
+{% block title %}登陆首页{% endblock %}
+
+{% block content %}
+
+<style type="text/css"> 
+.kjh li {
+  list-style:none;
+  float: left;
+  _display: inline;
+  width: 33px;
+  height: 33px;
+  margin-right: 8px;
+  font: 20px/33px "Microsoft YaHei", "微软雅黑", Arial;
+  text-align: center;
+  color: #fff;
+  background: url("/public/images/qiuH.png") no-repeat;
+}
+
+.kjh li.lQiu {
+    background: url(/public/images/blue.png) ;
+}
+.wqkj .bgzt .rq1 {
+    background: url(/public/images/qiuH.png) no-repeat;
+}
+.wqkj .bgzt .rq1, .wqkj .bgzt .bq1 {
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+    display: inline-block;
+    text-align: center;
+    font: 12px/25px "Microsoft YaHei", "微软雅黑", Arial;
+    color: #fff;
+    border-radius: 50%;
+}
+ </style> 
+
+<div class="content">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+          
+                <span class=" input-group-btn">
+                    <ul class="kjh ">
+                        <li>02</li>
+                        <li>05</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>20</li>
+                        <li>27</li>
+                        <li class="lQiu">04</li>
+                      </ul>
+                </span>
+                <span class="input-group-btn ">         
+                    <button class="btn btn-block btn-info " type="button">生成</button>
+                </span>
+            </div>
+        </div>
+    </div><!-- /.row -->
+
+</div>
+
+</div>
+{% endblock %}
