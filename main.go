@@ -15,6 +15,7 @@ func main() {
 	tmpl := iris.Django("./views", ".html").Reload(true) //是否更新
 	app.RegisterView(tmpl)
 	app.StaticWeb("/public", "./public") //指定静态文件路径
+
 	// Method:    GET
 	// Resource:  http://localhost:8080
 	app.Get("/", func(ctx iris.Context) {
@@ -31,11 +32,25 @@ func main() {
 		ctx.View("login.html")
 	})
 
+	app.Get("/user/login", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件： ./views/hello.html
+		ctx.View("login.html")
+	})
+
 	app.Get("/index", func(ctx iris.Context) {
 		// 绑定： {{.message}}　为　"Hello world!"
 		//ctx.ViewData("message", "Hello world!")
 		// 渲染模板文件： ./views/hello.html
 		ctx.View("index.html")
+	})
+
+	app.Get("/user/register", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		//ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件： ./views/hello.html
+		ctx.View("register.html")
 	})
 
 	// Method:    GET
