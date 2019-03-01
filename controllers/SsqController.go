@@ -1,8 +1,6 @@
 package controllers
 
 import (
-	"fmt"
-
 	"github.com/ITBread/lotteryweb/datamodels"
 	"github.com/ITBread/lotteryweb/services"
 	"github.com/kataras/iris"
@@ -19,20 +17,12 @@ func (c *SsqController) Get() (results []datamodels.Ssq) {
 	c.Ctx.ViewData("message", "Hello world!")
 	// 渲染模板文件： ./views/hello.html
 	c.Ctx.View("main.html")
-	println("===============", c.Ctx.GetCurrentRoute().Name())
-	fmt.Printf("===============%v\n", c.Ctx.GetCurrentRoute())
 	return nil
 }
 
 // GetHistory Get
 func (c *SsqController) GetHistory() (results []datamodels.Ssq) {
-	c.Ctx.ViewData("message", "Hello world!")
-	// 渲染模板文件： ./views/hello.html
-	println("=====****======", c.Ctx.GetCurrentRoute().Name())
-	println("=====****======", c.Ctx.GetCurrentRoute().Path())
-	println("=====****======", c.Ctx.GetCurrentRoute().ResolvePath())
-	fmt.Printf("****===========%v\n", c.Ctx.GetCurrentRoute())
-	c.Ctx.View("index.html")
+	c.Ctx.View("history.html")
 	return nil
 }
 

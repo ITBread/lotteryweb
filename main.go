@@ -17,6 +17,13 @@ func main() {
 	users := mvc.New(app.Party("/ssq"))  // 一个根路径为 /users 的组
 	//users.Register(userService)
 	users.Handle(new(controllers.SsqController)) // 定义组的controller
+
+	app.Get("/", func(ctx iris.Context) {
+		// 绑定： {{.message}}　为　"Hello world!"
+		ctx.ViewData("message", "Hello world!")
+		// 渲染模板文件：
+		ctx.View("index.html")
+	})
 	//　使用网络地址启动服务
 	app.Run(iris.Addr(":8090"))
 }
