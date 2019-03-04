@@ -13,21 +13,17 @@ type SsqService interface {
 	Create(red string, ssq datamodels.Ssq) (datamodels.Ssq, error)
 }
 
-func NewSsqService(engine *xorm.Engine) SsqService {
-	return &ssqService{
-		engine: engine,
-	}
-}
+// func NewSsqService(engine *xorm.Engine) SsqService {
+// 	return &MySsqService{
+// 		engine: engine,
+// 	}
+// }
 
-type ssqService struct {
+type MySsqService struct {
 	engine *xorm.Engine
 }
 
-func (s *ssqService) GetAll() (users []datamodels.User) {
+func (s *MySsqService) GetAll() (users []datamodels.Ssq) {
 	s.engine.Find(&users)
 	return
-}
-func (s *ssqService) GetAll() (ssq []datamodels.Ssq) {
-
-	return nil
 }

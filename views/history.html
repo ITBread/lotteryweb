@@ -1,0 +1,280 @@
+{% extends "shared/baselayout.html"%}
+
+{% block title %}登陆首页{% endblock %}
+
+{% block content %}
+
+<style type="text/css"> 
+.kjh li {
+  list-style:none;
+  float: left;
+  _display: inline;
+  width: 33px;
+  height: 33px;
+  margin-right: 8px;
+  font: 20px/33px "Microsoft YaHei", "微软雅黑", Arial;
+  text-align: center;
+  color: #fff;
+  background: url("/public/images/qiuH.png") no-repeat;
+}
+
+.kjh li.lQiu {
+    background: url(/public/images/qiuLs.jpg) ;
+}
+.wqkj .bgzt .rq1 {
+    background: url(/public/images/qiuHs.jpg) no-repeat;
+}
+.wqkj .bgzt .bq1 {
+    background: url(/public/images/qiuLs.jpg) no-repeat;
+}
+.wqkj .bgzt .rq1, .wqkj .bgzt .bq1 {
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+    display: inline-block;
+    text-align: center;
+    font: 12px/25px "Microsoft YaHei", "微软雅黑", Arial;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.containerHome {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wqkj .gjl {
+    height: 32px;
+    margin-bottom: 20px;
+}
+.wqkj .czjs {
+    height: 80px;
+    margin-bottom: 15px;
+    background: #f5f5f5;
+    border-top: 3px solid #e60013;
+    box-sizing: border-box;
+}
+.wqkj .bgzt {
+    width: 100%;
+    overflow: auto;
+}
+.wqkj .gjl .aqcx .zdyTc .zdyTcNr {
+    margin: 0 20px;
+}
+.wqkj .gjl .arcx {
+    float: right;
+    _display: inline;
+    margin-right: 6px;
+}
+.wqkj .gjl .aqcx {
+    float: right;
+    _display: inline;
+}
+.cleardiv {
+    clear: both;
+    height: 0;
+    display: block;
+    overflow: hidden;
+}
+.wqkj .gjl .aqcx li {
+    float: left;
+    _display: inline;
+    height: 30px;
+    padding: 0 13px;
+    margin-right: 6px;
+    font: bold 14px/30px "Microsoft YaHei", "微软雅黑", Arial;
+    text-align: center;
+    color: #666;
+    border: 1px solid #999;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.wqkj .gjl .aqcx .zdy {
+    position: relative;
+    width: 110px;
+    padding: 0;
+}
+
+.wqkj .gjl .arcx {
+    float: right;
+    _display: inline;
+    margin-right: 6px;
+}
+.wqkj .gjl .arcx {
+    float: right;
+    _display: inline;
+    margin-right: 6px;
+}
+.wqkj .gjl {
+    height: 32px;
+    margin-bottom: 20px;
+}
+ </style> 
+
+<div class="content">
+    <div class="row">
+        <div class="wqkj ssq">
+            <div class="containerHome">
+              <div class="czjs ssq">
+                <div class="czLogo"></div>
+                <select class="czxz">
+                  <option value="" selected="selected">双色球</option>
+                  
+                    <option value="/kjxx/fc3d/kjgg/">福彩3D</option>
+                  
+                  
+                    <option value="/kjxx/qlc/kjgg/">七乐彩</option>
+                  
+                </select>
+                <div class="kjsj">[ 每周二、四、日 21:15开奖 ]</div>
+                <div class="czgz">
+                  <a href="/c/2017-11-15/418908.shtml">游戏介绍</a>|
+                  <a href="/c/2017-11-13/417937.shtml">游戏规则</a>
+                </div>
+              </div>
+              <div class="gjl">
+                <h3>往期开奖号码和中奖情况</h3>
+                <div class="arcx">
+                  <dl>
+                    <dt>按开奖日查询：</dt>
+                    <dd>
+                      <ul>
+                        <li data-xq="2">二</li>
+                        <li data-xq="4">四</li>
+                        <li data-xq="7">日</li>
+                        <li data-xq="all" class="dq">全</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  
+                </div>
+                <div class="aqcx">
+                  <dl>
+                    <dt>按期次查询：</dt>
+                    <dd>
+                      <ul>
+                        <li class="xuq" data-xq="30">近30期</li>
+                        <li class="xuq" data-xq="50">近50期</li>
+                        <li class="xuq" data-xq="100">近100期</li>
+                        <li class="zdy dqzt zdyDq"><span>自定义查询</span>
+                          <div class="zdyTc" style="display: none;">
+                            <div class="zgx"></div>
+                            <div class="zdyTcNr">
+                              <div class="sqB">
+                                <div class="sqQ">
+                                  <strong class="dq" data-xl="0">按期数</strong>|<strong data-xl="1" class="">按期号</strong>|<strong data-xl="2" class="">按天数</strong>
+                                </div>
+                                <div class="sqN">
+                                  <div class="sqNr dq" data-xl="0">
+                                    
+                                    <div class="cxzj">我要查询最近<input type="text" maxlength="12"> 期</div>
+                                    <p class="zshu">注：最多100期</p>
+                                    <button class="anKs aQc">开始查询</button>
+                                    <button class="anCzQ" type="reset">重置</button>
+                                    
+                                  </div>
+                                  <div class="sqNr" data-xl="1">
+                                    
+                                    <div class="dzcx">第<input maxlength="12" class="inpQa" type="text">至<input maxlength="12" class="inpQz" type="text"></div>
+                                    <p class="zshu">注：期号格式为 2017041</p>
+                                    <button class="anKs aQzQ">开始查询</button>
+                                    <button class="anCzQz" type="reset">重置</button>
+                                    
+                                  </div>
+                                  <div class="sqNr" data-xl="2">
+                                    
+                                    <div class="dzcx">第<input maxlength="12" class="Wdate inpRa" type="text" onfocus="WdatePicker({skin:'whyGreen',maxDate:'%y-%M-%d'})" value="2017-10-24">至<input maxlength="12" class="Wdate inpRz" type="text" onfocus="WdatePicker({skin:'whyGreen',maxDate:'%y-%M-%d'})" value="2017-10-24"></div>
+                                    <p class="zshu">&nbsp;</p>
+                                    <button class="anKs aRzR">开始查询</button>
+                                    <button class="anCzRz" type="reset">重置</button>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="cleardiv"></div>
+              </div>
+              <div class="bgzt">
+                <table width="999" border="0" cellspacing="0" cellpadding="0">
+                  <thead style="text-align:center;box-sizing: content-box;">
+                    <tr>
+                      <td width="60" rowspan="2">期号</td>
+                      <td width="110" rowspan="2">开奖日期</td>
+                      <td colspan="2" class="qbg" style="text-align:center;">中奖号码</td>
+                      <td rowspan="2">总销售额（元）</td>
+                      <td colspan="2" class="qbg"  >一等奖</td>
+                      <td colspan="2" class="qbg"  >二等奖</td>
+                      <td colspan="2" class="qbg"  >三等奖</td>
+                      <td width="99" rowspan="2">奖池（元）</td>
+                      <td width="38" rowspan="2">详情</td>
+                    </tr>
+                    <tr>
+                      <td width="180">红球</td>
+                      <td width="38">蓝球</td>
+                      <td width="38">注数</td>
+                      <td width="78">中奖金额<br>（元）</td>
+                      <td width="38">注数</td>
+                      <td width="78">中奖金额<br>（元）</td>
+                      <td width="38">注数</td>
+                      <td width="78">中奖金额<br>（元）</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr data-week="2">
+                          <td>2019022</td><td>2019-02-26(二)</td>
+                          <td>
+                              <span class="rq1">03</span>
+                              <span class="rq1">07</span>
+                              <span class="rq1">11</span>
+                              <span class="rq1">21</span>
+                              <span class="rq1">30</span>
+                              <span class="rq1">33</span>
+                            </td>
+                            <td>
+                                <span class="bq1">07</span>
+                            </td>
+                            <td>338,829,860</td><td>19</td>
+                            <td>5503206</td><td>169</td>
+                            <td>70716</td><td>2055</td>
+                            <td>3000</td><td>1233143388</td>
+                            <td><a class="bgztXq" href="http://www.cwl.gov.cn//c/2019-02-26/449777.shtml"></a>
+                            </td>
+                        </tr>
+                      <tr data-week="7">
+                          <td>2019021</td><td>2019-02-24(日)</td>
+                            <td>
+                              <span class="rq1">02</span>
+                              <span class="rq1">05</span>
+                              <span class="rq1">07</span>
+                              <span class="rq1">08</span>
+                              <span class="rq1">20</span>
+                              <span class="rq1">27</span>
+                            </td>
+                              <td>
+                                  <span class="bq1">04</span>
+                                </td>
+                                <td>370,839,306</td><td>6</td><td>8810224</td><td>214</td><td>133535</td><td>1155</td><td>3000</td><td>1301850849</td><td><a class="bgztXq" href="http://www.cwl.gov.cn//c/2019-02-24/449667.shtml"></a></td></tr></tbody>
+                </table>
+              </div>
+              <div id="pageTool" class="fenYe" style="display: none;"></div>
+            </div>
+          </div>
+    </div><!-- /.row -->
+
+</div>
+
+</div>
+
+{% endblock %}
